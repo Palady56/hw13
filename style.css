@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100vh;
+  background-color: #fff7f7;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+.animated-figure {
+  animation: changeColor 2s infinite alternate;
+}
+
+@keyframes changeColor {
+  0% {
+      fill: blue;
+      stroke: black;
+  }
+  100% {
+      fill: green;
+      stroke: red;
+  }
+}
